@@ -2,7 +2,7 @@ const webpack = require('webpack');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-var WriteFilePlugin = require('write-file-webpack-plugin');
+//var WriteFilePlugin = require('write-file-webpack-plugin');
 
 var path = require('path');
 
@@ -53,9 +53,9 @@ module.exports = {
 
   devtool: "source-map",
   plugins: [
-    new WriteFilePlugin(),
+    //new WriteFilePlugin(),
     new CopyWebpackPlugin([
-           { from: 'src/*.html', to: './', flatten:true }
+           { from: 'src/index.html', to: './', flatten:true }
        ],  {debug: true}),
     // new ExtractTextPlugin({
     //      filename: 'css/style.css',
