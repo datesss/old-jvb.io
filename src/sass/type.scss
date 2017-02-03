@@ -1,0 +1,93 @@
+/******************************************************************
+
+FONTS & TYPOGRAPHY
+
+******************************************************************/
+
+
+/*** FAMILIES ***/
+
+$sans-serif: "Open Sans",
+Helvetica,
+"Helvetica Neue",
+Arial,
+sans-serif;
+
+@mixin fontsize($size:1.6, $line: $size * 1.5){
+    font-size:   ($size * 10) + px;
+    line-height: ($line * 10) + px;
+    font-size:   $size + rem;
+  line-height: $line + rem;
+}
+
+/*********************
+TYPOGRAPHY
+*********************/
+html {
+  font-size: 16px;
+}
+@include media('<=tablet') {
+  html {
+    font-size: 12px;
+  }
+}
+@include media('<=500px') {
+  html {
+    font-size: 8px;
+  }
+}
+
+body {
+    color: $black;
+    font-family: $sans-serif;
+    font-weight: 300;
+    // font-size: 16px;
+    line-height: 1.5em;
+    @include fontsize(1);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+//
+// a {
+//     cursor: pointer;
+//     border-bottom: 1px solid transparent;
+//     color: $link-color;
+//     text-decoration: none;
+//     transition: all .25s ease-in-out;
+//     &:hover,
+//     &:active {
+//         border-color: $link-color;
+//     }
+// }
+//
+// p {
+//     font-weight: 300;
+//     font-size: 18px;
+//     margin-top: 0;
+//     margin-bottom: 0.5em;
+//     line-height: 1.5em;
+// }
+//
+// ul,
+// ol {
+//     margin-top: 0;
+//     padding: 0;
+//     list-style-type: none;
+// }
+//
+// hr {
+//     background: $gold;
+//     border: 0;
+//     height: 1px;
+// }
+//

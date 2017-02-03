@@ -1,0 +1,21 @@
+
+@import "~susy/sass/susy";
+@import "~include-media/dist/_include-media.scss";
+@import 'normalize';
+@import 'constants';
+@import 'type';
+@import 'frontpage';
+// $susy: (
+//   columns: 12,  // The number of columns in your grid
+//   gutters: 1/4, // The size of a gutter in relation to a single column
+// );
+$susy: (
+//container: auto,
+  columns: 12,
+  gutters: 0,
+  //gutter-position: inside,
+  math: fluid,
+  output: isolate,
+);
+
+body { @include container(100em); }

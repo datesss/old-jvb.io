@@ -1,0 +1,17 @@
+$susy: (
+//container: auto,
+  columns: 12,
+  gutters: 0,
+  //gutter-position: inside,
+  math: fluid,
+  output: isolate,
+);
+
+.header {
+  @include span(12);
+  //background: rgb(221, 221, 221);
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 15%;
+}
