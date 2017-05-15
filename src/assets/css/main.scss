@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo|Source+Sans+Pro');
+
+@keyframes spin {
+  @for $i from 0 through 3600 {
+    #{$i / 3.6}% {background-image: linear-gradient(45deg, hsl($i, 80%, 80%), hsl(560 - $i, 80%, 20%));
+  }}
+}
+@keyframes spinText {
+  @for $i from 0 through 3600 {
+    #{$i / 3.6}% {background-image: linear-gradient(170deg, hsl($i, 100%, 70%), hsl(560 - $i, 100%, 40%));
+  }}
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Home {
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+    .Skill {
+      position: absolute;
+      width: 400px
+    }
+      h1 {
+        font-family: 'Chivo', sans-serif;
+        z-index: 2;
+        position: absolute;
+        top: 350px;
+        right: 40px;
+        font-size: 40px;
+        text-align: left;
+        color: white;
+        animation-name: spinText;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 285px;
+      }
+      h2 {
+        width: 285px;
+        position: absolute;
+        text-align: left;
+        top: 400px;
+        right: 40px;
+        color: rgba(255, 255, 255, 0.19);
+      }
+}
+
+.LinksMenu {
+  color: white;
+  opacity: 1;
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  ul {
+    padding-right: 20px;
+    margin: 0;
+    list-style: none;
+    li {
+      background: rgba(255, 255, 255, 0.07);
+      box-shadow: 1px -1px 2px 1px rgba(255, 255, 255, 0.16);
+      padding: 5px;
+      font-size: 20px;
+      display: inline-block;
+      transition: all 0.5s ease;
+      margin: 0 10px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 3px -3px 2px 1px rgba(255, 255, 255, 0.16);
+      }
+      a {
+        text-decoration: none;
+        color: rgba(241, 241, 241, 0.59);
+      }
+    }
+  }
+}
+
+.Three {
+  z-index: 1;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  canvas {
+    z-index: -1;
+  }
+}
