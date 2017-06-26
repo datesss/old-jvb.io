@@ -7,7 +7,7 @@ class LinksMenu extends React.Component {
   render() {
     const linksArray = [
       {title: 'Email', href: 'mailto:jake.brooks@midsummerish.com' },
-      {title: 'Portfolio', href: 'http://midsummerish.com/portfolio' },
+      {title: 'Portfolio', href: 'http://jvb.io/portfolio' },
     ]
     const links = _.map(linksArray, (link,i) => { return (<li key={i}><Link href={link.href} title={link.title} /></li>)});
     return (
