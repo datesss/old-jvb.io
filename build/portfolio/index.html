@@ -1,0 +1,186 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet">
+	<style>
+		a {
+			color: black;
+		}
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+		h1, h2, h3, h4, h5, h6, h7 {
+			font-family: 'Work Sans', sans-serif;
+		}
+		h1 {
+			font-size: 5vw;
+			  background: #9d00ff;
+			  background: -webkit-linear-gradient(left, #9d00ff , #e0b9b9 );
+			  background: -o-linear-gradient(right, #9d00ff, #e0b9b9 );
+			  background: -moz-linear-gradient(right, #9d00ff, #e0b9b9 );
+			  background: linear-gradient(to right, #9d00ff , #e0b9b9 );
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+		}
+		h2, .siteTitle {
+			font-size: 4vw;
+			text-align: left;
+			text-decoration: underline;
+			margin-bottom: 0vw;
+			padding-left: 5vw;
+		}
+		h3 {
+			font-size: 2vw;
+		}
+		p {
+			font-size: 2vw;
+			text-align: left;
+			padding-left: 7vw;}
+		ul {
+			 font-size: 1.5vw;
+			 padding-left: 8vw;
+		}
+		.item {
+			text-align: center;
+		}
+		.item p  {
+			margin-top: 0.3vw;
+		}
+		.item img {
+			max-width: 60vw;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		.img-sibling {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 20px;
+		}
+		.img-border {
+			border: 1px solid black;
+		}
+		.footer {
+			margin-top:30px;
+		}
+		.footer p {
+				text-align:right;
+				margin-right: 4vw;
+			    -ms-transform: rotate(-7deg);
+   				 -webkit-transform: rotate(-7deg);
+   				 transform: rotate(-7deg);
+		}
+		ul {
+			list-style: none;
+		}
+		@media (max-width: 1000px) {
+		  .sms-pic-hide {
+		    display: none;
+		  }
+		}
+		@media (max-width: 600px) {
+		  p,ul {
+		    font-size: 4vw;
+		    padding-left: 2vw;
+		  }
+		  .item img {
+		  	max-width: 100%;
+
+		  	margin: 0;
+		  	padding: 0;
+		  }
+		  h2 {padding-left: 0;}
+		}
+	</style>
+</head>
+<body>
+	<h1>Jake Brooks - Portfolio</h1>
+
+  <div class="item">
+    <a href="https://twitter.com/fire_toolz" target="_blank">
+      <h2>Twitter Bot</h2>
+    </a>
+      <p>A twitter bot that tweets once a day for musical project Fire-Toolz. The bot generates tweets based on a markov chain based of lyrics, and replaces with stylzed unicode characters. (es6, mongodb) <a href="https://github.com/datesss/firetoolz">github</a>
+        <a href="https://twitter.com/fire_toolz" target="_blank">
+          <img src="content/firetoolz.png">
+        </a>
+  </div>
+
+	<div class="item">
+	<h2>Proposal Slotting</h2>
+	<p>A web application I developed to manage submission data for large events. Based on information in the data set provided, the columns can be dynamically hidden, displayed, and filtered. Preferences are also saved using cookies. The application shows different information to different users based on permission levels. Developed for the American College of Emergency Physicians. ( ColdFusion & Angular 1)</p>
+	<img class="img-sibling" src="content/slotting3.gif">
+		<!-- <img class="img-sibling" src="content/session1.png">
+		<img class="img-sibling" src="content/session2.png">
+		<img class="img-sibling" src="content/session3.png"> -->
+	</div>
+
+	<div class="item">
+	<h2>Planner Budgeting</h2>
+	<p>I coded a new module for my company's software that allows administrators to easily add, modify, and remove budget and expense details for events they are planning. This information is later consumed by reports. Developed for New York University. ( ColdFusion & Angular 1)</p>
+
+		<img src="content/budgeting.gif">
+	</div>
+
+	<div class="item">
+	<h2>Session Check-In</h2>
+	<p>Two small web applications I developed for managing attendance. One allows attendees to easily 'check-in' on their computer or mobile device. The other allows administrators to view the expected roster, and check in the attendees who are present. Administrators can also remove users, edit the amount of credit they will receive, and add new users to the roster. Developed for Washington University, University of Vermont, New York University & several other clients. ( ColdFusion & Angular 1)</p>
+		<img class="img-sibling" src="content/claiming1.gif">
+		<img class="img-sibling"  src="content/claiming.gif">
+	</div>
+
+	<div class="item">
+<!--
+	<h2>Sponsorship Packaging</h2>
+	<p>coming soon ( ColdFusion & React & Redux)</p>
+	</div> -->
+
+	<div class="otherSites">
+		<h2>Websites</h2>
+		<p>I have coded many websites for annual conferences, organizations, events, and companies. In some cases, I designed the website entirely myself. In others, I was working off of a design provided by the client.</p>
+		<ul>
+      <li>Aeturnum<a href="https://www.underarmour150.com/" target="_blank">link</a></li>
+      <li>Mapr <a href="https://www.mapr.com/" target="_blank">link</a></li>
+      <li>Grom <a href="https://www.grom.com/" target="_blank">link</a></li>
+			<li>The Under Armour 150 <a href="https://www.underarmour150.com/" target="_blank">link</a></li>
+		</ul>
+	</div>
+
+	<div class="item">
+		<h2>"Telephone Game"</h2>
+		<p>A telephone number that when texted an image will respond with the last image another user sent in. It was messaged several thousand times by over 100 different people. (Javascript & Node & <a href="https://www.twilio.com/">Twilio</a>) </p>
+			<img class="img-sibling" style="height: 500px" src="content/ndp2.jpg">
+			<!-- <img class="img-sibling sms-pic-hide" style="height: 500px" src="content/ndp3.jpg"> -->
+			<img class="img-sibling sms-pic-hide" style="height: 500px" src="content/ndp4.jpg">
+			<img class="img-sibling sms-pic-hide" style="height: 500px" src="content/ndp5.jpg">
+	</div>
+
+	<div class="item">
+		<a href="http://www.hare-leap.com" target="_blank">
+			<h2>Hare Leap</h2>
+		</a>
+		<p>A random aphorism generator based on the work of artist <a href="http://sigliopress.com/book/book-of-ruth/" target="_blank">Robert Seydel.</a></p>
+		<a href="http://www.hare-leap.com" target="_blank">
+			<img class="img-border" src="content/hareleap.png">
+		</a>
+	</div>
+
+	<div class="item">
+		<a  href="http://midsummerish.tumblr.com" target="_blank">
+			<h2>Animations</h2>
+		</a>
+		<p>I have produce a body of animated sketches using Cinema 4D, After Effects, & Photoshop. I have been shown in several small gallery shows, I am a <a href="http://giphy.com/">GIPHY</a> featured artist. I have performed live projections in collaboration with artists such as <a href="http://signepierce.tumblr.com/" target="_blank">Signe Pierce</a> and <a href="https://soundcloud.com/jonomilo" target="_blank">Jónó Mí Ló</a>.</p>
+		<a  href="http://midsummerish.tumblr.com" target="_blank">
+			<img src="content/animation.gif">
+		</a>
+	</div>
+<!-- 	<div class="item">
+			<h2>Other</h2>
+		</a>
+		<p>I am a praciticing artist, and I have shown photographs in many group shows. In 2012, I was invited to do an <a href="http://culturia.de/jake-brooks/">artist residency</a> in Berlin. I once made a <a href="https://www.youtube.com/watch?v=dTyC3yywsxE" target="_blank">commericial</a> for a Local Business. I worked as a photo retoucher for a <a href="http://www.jdvision.net/#/start/">Fashion Photographer</a>. I was a long-term volunteer at an Animal Rescue, where I took many cute <a href="https://www.youtube.com/watch?v=6OdF_I4pXlU" target="_blank">videos</a> of the <a href="https://www.youtube.com/watch?v=KPk0A-aiRc4" target="_blank">animals</a>.</p>
+	</div> -->
+	<div class="footer">
+		<p class="footer">Like what you see?<br> <a href="mailto:jake.brooks@midsummerish.com">Email me</a> and lets chats!</p>
+	</div>
+
+</html>
